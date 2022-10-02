@@ -1,0 +1,64 @@
+    zecko ingin mandi karena gerah,namun disisi lain ibu ingin menyuci piring karena 
+    piring sudah banyak yang kotor dan tamu akan segera datang. jadi kata ibu kalau 
+    air di dalam bak berbentuk balok lebih dari 60 m3 maka silahkan mandi karena biasanya zeccko
+    menghabiskan 30 m3 air untuk mandi dan untuk mencuci piring biasanya ibu
+    menghabiskan 30 m3 air. jadi zecko bingung untuk menentukan volume air di dalam
+    bak agar dia tau dia bisa mandi atau tidak.
+    
+    program ini membantu zecko untuk mengetahui volume air sehingga dia tau kalau 
+    boleh mandi atau tidak.
+
+***************************/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int p,l,t,V;
+    string satuan;
+    
+    cout<<"menghitung volume bak mandi berbentuk balok"<<endl;
+    cout<<"________________"<<endl;
+    
+    cout<<"masukan data"<<endl;
+    
+    cout<<"panjang bak mandi = ";
+    cin>>p;
+    
+    cout<<"lebar bak mandi = ";
+    cin>>l;
+    
+    cout<<"tinggi bak mandi = ";
+    cin>>t;
+    
+    cout<<"masukan satuan ( contoh : m,cm,mm) = ";
+    cin>>satuan;
+    
+
+    V = p*l*t;
+    
+    cout<<"volume bak = ";
+    cout<<" "<< V <<" "<< satuan<<"3";
+    
+    if (V>60)
+    {
+        cout<<" (boleh mandi) ";
+        cin>>V;
+    }
+        
+        else
+        {
+            cout<<" (tidak boleh mandi) ";
+            cin>>V;
+        }
+        
+    
+    
+    
+    
+    
+    
+    return 0;
+}
